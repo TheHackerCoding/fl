@@ -1,0 +1,20 @@
+{
+  "name": "parser",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "TheHackerCoding",
+  "license": "MIT",
+  "devDependencies": {
+    "assemblyscript": "~0.19.8"
+  },
+  "scripts": {
+    "build:debug": "asc src/index.ts --target debug",
+    "build:release": "asc src/index.ts --target release",
+    "build:all": "yarn build:debug && yarn build:release",
+    "dev": "yarn build:debug",
+    "prod": "yarn build:release"
+  },
+  "dependencies": {
+    "as-bind": "^0.8.2"
+  }
+}
